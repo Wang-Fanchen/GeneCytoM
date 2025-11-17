@@ -1,0 +1,41 @@
+Package: GeneCytoM
+Type: Package
+Title: Multimodal Gene-to-Cytoband Profiling
+Version: 0.2.0
+Authors@R:
+    person(given = "Your",
+           family = "Name",
+           role = c("aut", "cre"),
+           email = "your.email@example.com")
+Description: A comprehensive R package for comparing multimodal (gene + image) models
+    against gene-only models at both the gene and cytoband levels. The package identifies
+    genes whose importance is enhanced in multimodal settings, maps them to chromosomal
+    cytobands, and provides cytoband-level attribution analysis with rich visualizations.
+    It supports optional P-value filtering and generates multiple sorting perspectives
+    (by multimodal attribution, difference, and ratio) to highlight cytobands enriched
+    for multimodal-advantaged genes.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Depends: R (>= 3.5.0)
+Imports:
+    dplyr,
+    ggplot2,
+    forcats,
+    karyoploteR,
+    GenomicRanges,
+    regioneR,
+    IRanges,
+    magrittr
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0),
+    usethis,
+    devtools,
+    roxygen2
+VignetteBuilder: knitr
+URL: https://github.com/yourusername/GeneCytoM
+BugReports: https://github.com/yourusername/GeneCytoM/issues
